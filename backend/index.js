@@ -14,18 +14,8 @@ dotenv.config();
 app.use(express.json());
 
 // middleware for handling CORS policy
-// Option 1
-app.use(cors());
-// Option 2
-// app.use(
-//     cors({
-//         origin: 'http://localhost:5555',
-//         methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//         allowedHeaders: ['Content-Type'],
-//     })
-// );
 
-app.get('/', (req, res) => res.status(234).send('WELCOME'));
+app.use(cors());
 
 app.use('/books', booksRoute);
 
