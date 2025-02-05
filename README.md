@@ -1,119 +1,92 @@
-📚 Bookstore CRUD Application
+# 📚 Bookstore CRUD Application
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application for managing books. This project includes CRUD (Create, Read, Update, Delete) operations for a bookstore, featuring a Book Table for listing books and a Book Card for displaying individual book details.
 
-🚀 Features
+## 🚀 Features
 
-📌 Add Books - Create new book entries.
+- 📌 **Add Books** - Create new book entries.
+- 📌 **View Books** - Display books in both table and card formats.
+- 📌 **Update Books** - Edit book details.
+- 📌 **Delete Books** - Remove books from the store.
+- 📌 **RESTful API** - Uses Express.js for handling backend operations.
+- 📌 **MongoDB Database** - Stores book data.
+- 📌 **React Frontend** - Interactive UI built with React and TailwindCSS.
 
-📌 View Books - Display books in both table and card formats.
+## 🛠️ Tech Stack
 
-📌 Update Books - Edit book details.
+**Frontend:** React, TailwindCSS, Axios  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB, Mongoose
 
-📌 Delete Books - Remove books from the store.
+## 📦 Installation & Setup
 
-📌 RESTful API - Uses Express.js for handling backend operations.
+1. **Clone the Repository**
 
-📌 MongoDB Database - Stores book data.
+   ```bash
+   git clone https://github.com/yourusername/bookstore-crud.git
+   cd bookstore-crud
 
-📌 React Frontend - Interactive UI built with React and TailwindCSS.
+   ```
 
-🛠️ Tech Stack
+2. **Install Dependencies**
 
-Frontend: React, TailwindCSS, Axios
+   Backend
 
-Backend: Node.js, Express.js
+   ```bash
+   cd backend
+   npm install
+   ```
 
-Database: MongoDB, Mongoose
+   Frontend
 
-📦 Installation & Setup
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-1. Clone the Repository
+3. **Set Up Environment Variables**
 
-git clone https://github.com/yourusername/bookstore-crud.git
-cd bookstore-crud
+   Create a .env file in the backend directory and add:
 
-2. Install Dependencies
+   ```bash
+   MONGO_URI=<your_mongodb_connection_string>
+   PORT=<5000>
+   ```
 
-Backend
+4. **Run the Application**
 
-cd backend
-npm install
+   Backend Server
 
-Frontend
+   ```bash
+   cd backend
+   npm run dev
+   ```
 
-cd ../frontend
-npm install
+   Frontend Server
 
-3. Set Up Environment Variables
+   ```bash
+   cd frontend
+   npm run dev
+   ```
 
-Create a .env file in the backend directory and add:
+## 🎮 Usage
 
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
+- Open http://localhost:5173/ to access the React frontend.
+- Use the interface to add, view, edit, and delete books.
+- Backend API runs at http://localhost:5000/api/books.
 
-4. Run the Application
+## 📄 API Endpoints
 
-Backend Server
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| GET    | `/api/books`     | Get all books       |
+| GET    | `/api/books/:id` | Get a single book   |
+| POST   | `/api/books`     | Add a new book      |
+| PUT    | `/api/books/:id` | Update book details |
+| DELETE | `/api/books/:id` | Delete a book       |
 
-cd backend
-npm start
+## 🛠️ Future Enhancements
 
-Frontend Server
-
-cd frontend
-npm run dev
-
-🎮 Usage
-
-Open http://localhost:5173/ to access the React frontend.
-
-Use the interface to add, view, edit, and delete books.
-
-Backend API runs at http://localhost:5000/api/books.
-
-📄 API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/api/books
-
-Get all books
-
-GET
-
-/api/books/:id
-
-Get a single book
-
-POST
-
-/api/books
-
-Add a new book
-
-PUT
-
-/api/books/:id
-
-Update book details
-
-DELETE
-
-/api/books/:id
-
-Delete a book
-
-🛠️ Future Enhancements
-
-🔍 Search & Filter functionality
-
-📖 User authentication (JWT)
-
-📦 Book categories & genres
+- 🔍 Search & Filter functionality
+- 📖 User authentication (JWT)
+- 📦 Book categories & genres
